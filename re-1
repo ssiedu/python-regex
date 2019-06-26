@@ -1,0 +1,24 @@
+import re;
+
+matcher=re.finditer("python","this is python and python is simple language python is used for all areas");
+for match in matcher:
+    print(match.start(),match.end(),match.group()); #start-starting, end-ending+1, group->matching string
+    count+=1;
+
+print("Total occurences for python : ",count);
+
+#SAME THING CAN BE DONE 
+
+"""
+pattern=re.compile("py");   #pattern searching for
+
+matcher=pattern.finditer("Learning python is easy and python is powerfull too"); #getting iterator 
+
+count=0;
+
+for match in matcher:
+    print(match.start(),match.end(),match.group()); #start-starting, end-ending+1, group->matching string
+    count+=1;
+
+print("Total occurences for python : ",count);
+"""
