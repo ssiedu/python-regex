@@ -12,7 +12,7 @@ pt7=".";                #any char
 
 mystr="abA4Bx yZ9x@#  cDA9# $33";
 
-matcher=re.finditer(pt7,mystr);
+matcher=re.finditer(pt3,mystr);
 for match in matcher:
     print(match.start(),"\t",match.group());
     

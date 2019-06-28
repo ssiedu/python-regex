@@ -2,7 +2,7 @@ import re;
 
 str="python program is practically easy to practice";
 
-ptr="py";
+ptr="";
 
 res=re.findall(ptr,str);
 print(res);
